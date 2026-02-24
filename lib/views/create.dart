@@ -62,7 +62,7 @@ class CreateState extends State<Create> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Tambah Makanan"),
+        title: const Text("Tambah Menu"),
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
@@ -70,7 +70,7 @@ class CreateState extends State<Create> {
         child: SizedBox(
           height: 60,
           child: ElevatedButton(
-            child: const Text("Simpan Makanan"),
+            child: const Text("Simpan Menu"),
             style: ElevatedButton.styleFrom(
               foregroundColor: Colors.white,
               backgroundColor: Colors.green,

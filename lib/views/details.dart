@@ -33,7 +33,7 @@ class DetailsState extends State<Details> {
 
   pesan() {
     Fluttertoast.showToast(
-        msg: "Data makanan berhasil dihapus",
+        msg: "Menu berhasil dihapus",
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.CENTER,
         timeInSecForIosWeb: 1,
@@ -67,7 +67,7 @@ class DetailsState extends State<Details> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Detail Makanan"),
+        title: Text("Detail Menu ${widget.sw.nama}"),
         centerTitle: true,
         backgroundColor: Colors.blue,
         actions: [

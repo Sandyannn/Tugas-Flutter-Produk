@@ -56,11 +56,11 @@ class AppFormState extends State<AppForm> {
     return TextFormField(
       controller: widget.namaController,
       decoration: InputDecoration(
-        labelText: "Nama Makanan",
+        labelText: "Nama Menu",
         prefixIcon: const Icon(Icons.fastfood),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
       ),
-      validator: (value) => value!.isEmpty ? 'Masukkan Nama Makanan' : null,
+      validator: (value) => value!.isEmpty ? 'Masukkan Nama Menu' : null,
     );
   }
 
@@ -110,11 +110,11 @@ class AppFormState extends State<AppForm> {
       controller: widget.detailController,
       maxLines: 3,
       decoration: InputDecoration(
-        labelText: "Detail Makanan",
+        labelText: "Detail Menu",
         prefixIcon: const Icon(Icons.description),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
       ),
-      validator: (value) => value!.isEmpty ? 'Masukkan Detail Makanan' : null,
+      validator: (value) => value!.isEmpty ? 'Masukkan Detail Menu' : null,
     );
   }
 
@@ -122,7 +122,7 @@ class AppFormState extends State<AppForm> {
     return TextFormField(
       controller: widget.fotoController,
       decoration: InputDecoration(
-        labelText: "URL Foto Makanan",
+        labelText: "URL Foto Menu",
         prefixIcon: const Icon(Icons.image),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
       ),

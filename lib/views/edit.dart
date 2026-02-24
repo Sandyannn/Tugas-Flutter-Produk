@@ -37,7 +37,7 @@ class EditState extends State<Edit> {
 
   pesan() {
     Fluttertoast.showToast(
-      msg: "Perubahan Data Makanan Berhasil disimpan",
+      msg: "Perubahan Menu Berhasil disimpan",
       toastLength: Toast.LENGTH_SHORT,
       gravity: ToastGravity.CENTER,
       backgroundColor: Colors.green,
@@ -69,13 +69,13 @@ class EditState extends State<Edit> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Edit Makanan"),
+        title: Text("Edit Menu ${widget.sw.nama}"),
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
       bottomNavigationBar: BottomAppBar(
         child: ElevatedButton(
-          child: Text("Update Data"),
+          child: Text("Update Menu"),
           style: ElevatedButton.styleFrom(
             foregroundColor: Colors.white,
             backgroundColor: Colors.orange,

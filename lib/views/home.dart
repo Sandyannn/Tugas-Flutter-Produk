@@ -51,7 +51,7 @@ class HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("List Data Makanan"), 
+        title: const Text("List Menu Warung Makan Sederhana"), 
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
